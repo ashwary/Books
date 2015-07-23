@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="5dp"
+    android:id="@+id/boxContent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xxxxx"
+        android:id="@+id/txtMessage"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMessage"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnYes"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_margin="15dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:text="Yes"
+            android:scaleType="centerInside"
+            android:layout_alignParentLeft="true"
+            android:visibility="visible"
+            android:layout_weight="1"
+            android:background="#ffffffff" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNo"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_margin="15dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:text="No"
+            android:scaleType="centerInside"
+            android:layout_alignParentRight="true"
+            android:visibility="visible"
+            android:layout_weight="1"
+            android:background="#ffffffff" />
+    </LinearLayout>
+</RelativeLayout>
